@@ -1,0 +1,182 @@
+Utilicé el comando History en la terminal para ver los comandos recientes :) que fueron los siguientes:
+
+(base) jorgejarajuarez@MacBook-Air-de-DNTI 20230605-Jorge-Jara % history
+   57  mkdir Terminal\n
+   58  mkdir Hardware\n
+   59  touch Terminal/resumen.txt\n
+   60  touch Hardware/resumen.txt\n
+   61  git add .\n
+   62  git commit -m "Agregar archivos y carpetas en la rama feature01"\n
+   63  git push origin feature01\n
+   64  git branch feature02\n
+   65  git checkout feature02\n
+   66  nano Terminal/resumen.txt\n
+   67  nano Hardware/resumen.txt\n
+   68  git add .\n
+   69  git commit -m "Agregar partes de la computadora y comandos más usados"
+   70  git push origin feature02\n
+   71  git checkout main
+   72  mv comandos.txt comandosUtilizados.txt\n
+
+Pero, de cualquier forma pego todos los que he usado a lo largo del examen:
+
+Last login: Thu Jun  1 14:30:14 on console
+g%                                                                              (base) jorgejarajuarez@MacBook-Air-de-DNTI ~ % git --version
+git version 2.39.2 (Apple Git-143)
+(base) jorgejarajuarez@MacBook-Air-de-DNTI ~ % cd Desktop
+(base) jorgejarajuarez@MacBook-Air-de-DNTI Desktop % mkdir 20230605-Jorge-Jara
+(base) jorgejarajuarez@MacBook-Air-de-DNTI Desktop % cd 2023-Jorge-Jara
+cd: no such file or directory: 2023-Jorge-Jara
+(base) jorgejarajuarez@MacBook-Air-de-DNTI Desktop % cd 20230605-Jorge-Jara
+(base) jorgejarajuarez@MacBook-Air-de-DNTI 20230605-Jorge-Jara % git remote add origin https://github.com/jorge-jara/20230605-Jorge-Jara.git
+fatal: not a git repository (or any of the parent directories): .git
+(base) jorgejarajuarez@MacBook-Air-de-DNTI 20230605-Jorge-Jara % git remote add origin https://github.com/jorge-jara/20230605-Jorge-Jara.git
+fatal: not a git repository (or any of the parent directories): .git
+(base) jorgejarajuarez@MacBook-Air-de-DNTI 20230605-Jorge-Jara % git init
+Initialized empty Git repository in /Users/jorgejarajuarez/Desktop/20230605-Jorge-Jara/.git/
+(base) jorgejarajuarez@MacBook-Air-de-DNTI 20230605-Jorge-Jara % git remote add origin https://github.com/jorge-jara/20230605-Jorge-Jara.git
+(base) jorgejarajuarez@MacBook-Air-de-DNTI 20230605-Jorge-Jara % touch comandos.txt
+(base) jorgejarajuarez@MacBook-Air-de-DNTI 20230605-Jorge-Jara % touch main.js
+(base) jorgejarajuarez@MacBook-Air-de-DNTI 20230605-Jorge-Jara % git add comandos.txt main.js index.html
+(base) jorgejarajuarez@MacBook-Air-de-DNTI 20230605-Jorge-Jara % git commit -m "Primer commit: Agregar archivos comandos.txt, main.js e index.html :)"
+[main (root-commit) e275822] Primer commit: Agregar archivos comandos.txt, main.js e index.html :)
+ Committer: Jorge Jara Juarez <jorgejarajuarez@MacBook-Air-de-DNTI.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 comandos.txt
+ create mode 100644 index.html
+ create mode 100644 main.js
+(base) jorgejarajuarez@MacBook-Air-de-DNTI 20230605-Jorge-Jara % git push origin master
+
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/jorge-jara/20230605-Jorge-Jara.git'
+(base) jorgejarajuarez@MacBook-Air-de-DNTI 20230605-Jorge-Jara % git branch --show-current
+
+main
+(base) jorgejarajuarez@MacBook-Air-de-DNTI 20230605-Jorge-Jara % git push origin main  
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 305 bytes | 305.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/jorge-jara/20230605-Jorge-Jara.git
+ * [new branch]      main -> main
+(base) jorgejarajuarez@MacBook-Air-de-DNTI 20230605-Jorge-Jara % git branch feature01
+
+(base) jorgejarajuarez@MacBook-Air-de-DNTI 20230605-Jorge-Jara % git checkout feature01
+
+Switched to branch 'feature01'
+(base) jorgejarajuarez@MacBook-Air-de-DNTI 20230605-Jorge-Jara % mkdir Terminal
+
+(base) jorgejarajuarez@MacBook-Air-de-DNTI 20230605-Jorge-Jara % mkdir Hardware
+
+(base) jorgejarajuarez@MacBook-Air-de-DNTI 20230605-Jorge-Jara % touch Terminal/resumen.txt
+
+(base) jorgejarajuarez@MacBook-Air-de-DNTI 20230605-Jorge-Jara % touch Hardware/resumen.txt
+
+(base) jorgejarajuarez@MacBook-Air-de-DNTI 20230605-Jorge-Jara % git add .
+
+(base) jorgejarajuarez@MacBook-Air-de-DNTI 20230605-Jorge-Jara % git commit -m "Agregar archivos y carpetas en la rama feature01"
+
+[feature01 acd407c] Agregar archivos y carpetas en la rama feature01
+ Committer: Jorge Jara Juarez <jorgejarajuarez@MacBook-Air-de-DNTI.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Hardware/resumen.txt
+ create mode 100644 Terminal/resumen.txt
+(base) jorgejarajuarez@MacBook-Air-de-DNTI 20230605-Jorge-Jara % git push origin feature01
+
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 409 bytes | 409.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'feature01' on GitHub by visiting:
+remote:      https://github.com/jorge-jara/20230605-Jorge-Jara/pull/new/feature01
+remote: 
+To https://github.com/jorge-jara/20230605-Jorge-Jara.git
+ * [new branch]      feature01 -> feature01
+(base) jorgejarajuarez@MacBook-Air-de-DNTI 20230605-Jorge-Jara % git branch feature02
+
+(base) jorgejarajuarez@MacBook-Air-de-DNTI 20230605-Jorge-Jara % git checkout feature02
+
+Switched to branch 'feature02'
+(base) jorgejarajuarez@MacBook-Air-de-DNTI 20230605-Jorge-Jara % nano Terminal/resumen.txt
+
+(base) jorgejarajuarez@MacBook-Air-de-DNTI 20230605-Jorge-Jara % nano Hardware/resumen.txt
+
+(base) jorgejarajuarez@MacBook-Air-de-DNTI 20230605-Jorge-Jara % git add .
+
+(base) jorgejarajuarez@MacBook-Air-de-DNTI 20230605-Jorge-Jara % git commit -m "Agregar partes de la computadora y comandos más usados"
+[feature02 838b93a] Agregar partes de la computadora y comandos más usados
+ Committer: Jorge Jara Juarez <jorgejarajuarez@MacBook-Air-de-DNTI.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 8 insertions(+)
+(base) jorgejarajuarez@MacBook-Air-de-DNTI 20230605-Jorge-Jara % git push origin feature02
+
+Enumerating objects: 11, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (6/6), 562 bytes | 562.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'feature02' on GitHub by visiting:
+remote:      https://github.com/jorge-jara/20230605-Jorge-Jara/pull/new/feature02
+remote: 
+To https://github.com/jorge-jara/20230605-Jorge-Jara.git
+ * [new branch]      feature02 -> feature02
+(base) jorgejarajuarez@MacBook-Air-de-DNTI 20230605-Jorge-Jara % git checkout main
+Switched to branch 'main'
+(base) jorgejarajuarez@MacBook-Air-de-DNTI 20230605-Jorge-Jara % mv comandos.txt comandosUtilizados.txt
+
+(base) jorgejarajuarez@MacBook-Air-de-DNTI 20230605-Jorge-Jara % history
+   57  mkdir Terminal\n
+   58  mkdir Hardware\n
+   59  touch Terminal/resumen.txt\n
+   60  touch Hardware/resumen.txt\n
+   61  git add .\n
+   62  git commit -m "Agregar archivos y carpetas en la rama feature01"\n
+   63  git push origin feature01\n
+   64  git branch feature02\n
+   65  git checkout feature02\n
+   66  nano Terminal/resumen.txt\n
+   67  nano Hardware/resumen.txt\n
+   68  git add .\n
+   69  git commit -m "Agregar partes de la computadora y comandos más usados"
+   70  git push origin feature02\n
+   71  git checkout main
+   72  mv comandos.txt comandosUtilizados.txt\n
